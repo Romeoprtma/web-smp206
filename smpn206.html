@@ -7,6 +7,7 @@
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css" />
 
         <title>SMP Negeri 206</title>
     </head>
@@ -33,23 +34,23 @@
 
                 <!-- Desktop Menu -->
                 <ul id="menu" class="hidden md:flex gap-6 text-gray-700 font-medium">
-                    <li><a href="#" class="hover:bg-blue-100 hover:text-blue-500 px-3 py-1 rounded-md transition">Beranda</a></li>
-                    <li><a href="#" class="hover:bg-blue-100 hover:text-blue-500 px-3 py-1 rounded-md transition">Tentang Kami</a></li>
-                    <li><a href="#" class="hover:bg-blue-100 hover:text-blue-500 px-3 py-1 rounded-md transition">Kurikulum</a></li>
-                    <li><a href="#" class="hover:bg-blue-100 hover:text-blue-500 px-3 py-1 rounded-md transition">Fasilitas</a></li>
-                    <li><a href="#" class="hover:bg-blue-100 hover:text-blue-500 px-3 py-1 rounded-md transition">PPDB</a></li>
-                    <li><a href="#" class="hover:bg-blue-100 hover:text-blue-500 px-3 py-1 rounded-md transition">Kontak</a></li>
+                    <li><a href="#beranda" class="hover:bg-blue-100 hover:text-blue-500 px-3 py-1 rounded-md transition">Beranda</a></li>
+                    <li><a href="#tentang" class="hover:bg-blue-100 hover:text-blue-500 px-3 py-1 rounded-md transition">Tentang Kami</a></li>
+                    <li><a href="#kurikulum" class="hover:bg-blue-100 hover:text-blue-500 px-3 py-1 rounded-md transition">Kurikulum</a></li>
+                    <li><a href="#fasilitas" class="hover:bg-blue-100 hover:text-blue-500 px-3 py-1 rounded-md transition">Fasilitas</a></li>
+                    <li><a href="#ppdb" class="hover:bg-blue-100 hover:text-blue-500 px-3 py-1 rounded-md transition">PPDB</a></li>
+                    <li><a href="#kontak" class="hover:bg-blue-100 hover:text-blue-500 px-3 py-1 rounded-md transition">Kontak</a></li>
                 </ul>
             </div>
 
             <!-- Mobile Menu -->
             <ul id="mobile-menu" class="md:hidden hidden flex-col gap-2 mt-4 text-gray-700 font-medium px-2">
-                <li><a href="#" class="block hover:bg-blue-100 hover:text-blue-500 px-3 py-2 rounded-md transition">Beranda</a></li>
-                <li><a href="#" class="block hover:bg-blue-100 hover:text-blue-500 px-3 py-2 rounded-md transition">Tentang Kami</a></li>
-                <li><a href="#" class="block hover:bg-blue-100 hover:text-blue-500 px-3 py-2 rounded-md transition">Kurikulum</a></li>
-                <li><a href="#" class="block hover:bg-blue-100 hover:text-blue-500 px-3 py-2 rounded-md transition">Fasilitas</a></li>
-                <li><a href="#" class="block hover:bg-blue-100 hover:text-blue-500 px-3 py-2 rounded-md transition">PPDB</a></li>
-                <li><a href="#" class="block hover:bg-blue-100 hover:text-blue-500 px-3 py-2 rounded-md transition">Kontak</a></li>
+                <li><a href="#beranda" class="block hover:bg-blue-100 hover:text-blue-500 px-3 py-2 rounded-md transition">Beranda</a></li>
+                <li><a href="#tentang" class="block hover:bg-blue-100 hover:text-blue-500 px-3 py-2 rounded-md transition">Tentang Kami</a></li>
+                <li><a href="#kurikulum" class="block hover:bg-blue-100 hover:text-blue-500 px-3 py-2 rounded-md transition">Kurikulum</a></li>
+                <li><a href="#fasilitas" class="block hover:bg-blue-100 hover:text-blue-500 px-3 py-2 rounded-md transition">Fasilitas</a></li>
+                <li><a href="#ppdb" class="block hover:bg-blue-100 hover:text-blue-500 px-3 py-2 rounded-md transition">PPDB</a></li>
+                <li><a href="#kontak" class="block hover:bg-blue-100 hover:text-blue-500 px-3 py-2 rounded-md transition">Kontak</a></li>
             </ul>
         </nav>
 
@@ -72,7 +73,7 @@
             </div>
         </section>
 
-        <section class="max-w-6xl mx-auto px-4 py-12">
+        <section id="beranda" class="max-w-6xl mx-auto px-4 py-12">
             <div class="p-8 md:flex md:items-start md:gap-8">
                 <!-- Foto Kepala Sekolah -->
                 <div class="flex-shrink-0 mb-6 md:mb-0">
@@ -113,7 +114,7 @@
             </div>
         </section>
 
-        <section class="font-poppins bg-[#FFFFFF] py-[80px] px-[16px] md:px-[64px] lg:px-[128px]">
+        <section id="tentang" class="font-poppins bg-[#FFFFFF] py-[80px] px-[16px] md:px-[64px] lg:px-[128px]">
             <div class="flex flex-col md:flex-row items-start gap-8">
                 <!-- Kiri: Teks -->
                 <div class="w-full md:w-1/2">
@@ -149,7 +150,7 @@
             </div>
         </section>
 
-        <section class="bg-[#E8F9FF] py-20 px-4 font-poppins">
+        <section id="kurikulum" class="bg-[#E8F9FF] py-20 px-4 font-poppins">
             <div class="max-w-4xl mx-auto text-center">
                 <h1 class="text-[32px] md:text-[36px] font-bold text-[#1E293B] mb-12">Kurikulum</h1>
 
@@ -167,7 +168,7 @@
         </section>
 
         <!-- Section -->
-        <section class="bg-[#F1F8FF] py-16 px-4 font-poppins text-center">
+        <section id="fasilitas" class="bg-[#FFFFFF] py-16 px-4 font-poppins text-center">
             <h2 class="text-[24px] md:text-[28px] font-bold text-[#1E293B] mb-8">Fasilitas</h2>
 
             <div class="swiper mySwiper max-w-xl mx-auto">
@@ -195,12 +196,9 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
             </div>
-
-            <!-- Inisialisasi Swiper -->
-            <script></script>
         </section>
 
-        <section class="bg-[#1E3A8A] py-16 px-4 font-poppins text-white">
+        <section id="ppdb" class="bg-[#1E3A8A] py-16 px-4 font-poppins text-white">
             <div class="max-w-3xl mx-auto bg-white rounded-xl p-6 text-left text-[#1E293B]">
                 <h2 class="text-xl font-bold mb-4">PPDB 2024/2025</h2>
 
@@ -227,8 +225,8 @@
             </div>
         </section>
 
-        <section class="bg-[#F1F8FF] py-16 px-4 font-poppins">
-            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section id="kontak" class="bg-[#FFFFFF] py-16 px-4 font-poppins">
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start justify-center">
                 <!-- Form -->
                 <div>
                     <h2 class="text-[24px] font-bold text-[#1E293B] mb-4">Hubungi Kami</h2>
