@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+        <title>SMP Negeri 206</title>
+    </head>
+    <body>
+        <nav class="bg-white px-6 py-4 shadow-md">
+            <div class="flex justify-between items-center max-w-7xl mx-auto">
+                <!-- Logo -->
+                <h1 class="text-xl md:text-2xl font-bold text-[#1E40AF]">SMP NEGERI 206</h1>
+
+                <!-- Hamburger Button -->
+                <button id="menu-toggle" class="md:hidden text-gray-800 focus:outline-none">
+                    <svg
+                        class="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+
+                <!-- Desktop Menu -->
+                <ul id="menu" class="hidden md:flex gap-6 text-gray-700 font-medium">
+                    <li><a href="#" class="hover:bg-blue-100 hover:text-blue-500 px-3 py-1 rounded-md transition">Beranda</a></li>
+                    <li><a href="#" class="hover:bg-blue-100 hover:text-blue-500 px-3 py-1 rounded-md transition">Tentang Kami</a></li>
+                    <li><a href="#" class="hover:bg-blue-100 hover:text-blue-500 px-3 py-1 rounded-md transition">Kurikulum</a></li>
+                    <li><a href="#" class="hover:bg-blue-100 hover:text-blue-500 px-3 py-1 rounded-md transition">Fasilitas</a></li>
+                    <li><a href="#" class="hover:bg-blue-100 hover:text-blue-500 px-3 py-1 rounded-md transition">PPDB</a></li>
+                    <li><a href="#" class="hover:bg-blue-100 hover:text-blue-500 px-3 py-1 rounded-md transition">Kontak</a></li>
+                </ul>
+            </div>
+
+            <!-- Mobile Menu -->
+            <ul id="mobile-menu" class="md:hidden hidden flex-col gap-2 mt-4 text-gray-700 font-medium px-2">
+                <li><a href="#" class="block hover:bg-blue-100 hover:text-blue-500 px-3 py-2 rounded-md transition">Beranda</a></li>
+                <li><a href="#" class="block hover:bg-blue-100 hover:text-blue-500 px-3 py-2 rounded-md transition">Tentang Kami</a></li>
+                <li><a href="#" class="block hover:bg-blue-100 hover:text-blue-500 px-3 py-2 rounded-md transition">Kurikulum</a></li>
+                <li><a href="#" class="block hover:bg-blue-100 hover:text-blue-500 px-3 py-2 rounded-md transition">Fasilitas</a></li>
+                <li><a href="#" class="block hover:bg-blue-100 hover:text-blue-500 px-3 py-2 rounded-md transition">PPDB</a></li>
+                <li><a href="#" class="block hover:bg-blue-100 hover:text-blue-500 px-3 py-2 rounded-md transition">Kontak</a></li>
+            </ul>
+        </nav>
+
+        <section class="relative bg-cover bg-center h-[600px]" style="background-image: url('img/hero-smp206.svg')">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-[#000000]/70"></div>
+
+            <!-- Konten -->
+            <div class="relative z-10 flex flex-col items-center justify-center text-white text-center h-full px-4">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4 font-poppins">Ayo Bergabung Bersama Kami!</h1>
+                <p class="text-lg md:text-xl mb-6 font-poppins">Membentuk Generasi Unggul dan Berakhlak Mulia</p>
+                <div class="flex gap-4">
+                    <a href="#ppdb" class="bg-blue-600 hover:bg-[#1E3A8A] text-white px-6 py-3 rounded-md font-semibold transition">
+                        Daftar Sekarang
+                    </a>
+                    <a href="#tentang" class="bg-white hover:bg-gray-100 text-gray-800 px-6 py-3 rounded-md font-semibold transition shadow">
+                        Pelajari Lebih Lanjut
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-6xl mx-auto px-4 py-12">
+            <div class="p-8 md:flex md:items-start md:gap-8">
+                <!-- Foto Kepala Sekolah -->
+                <div class="flex-shrink-0 mb-6 md:mb-0">
+                    <div
+                        class="w-[300px] h-[400px] mt-[15px] bg-gray-200 rounded-lg border border-gray-300 flex items-center justify-center text-gray-500 text-xl"
+                        style="box-shadow: 10px 11px 0px 0px rgba(0, 0, 0, 0.75)"
+                    >
+                        <img
+                            src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/66/2025/01/12/Kepala-Sekolah-1-2730794727.png"
+                            alt=""
+                            class="w-full h-full object-cover rounded-lg"
+                        />
+                    </div>
+                </div>
+
+                <!-- Sambutan -->
+                <div class="md:flex-1">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Sambutan Kepala Sekolah</h2>
+                    <p class="italic mb-4">"Assalamualaikum Wr. Wb."</p>
+                    <p class="mb-4">
+                        Selamat datang di website resmi SMA Negeri 1. Sebagai lembaga pendidikan yang berkomitmen pada keunggulan akademik dan
+                        pembentukan karakter, kami senantiasa berupaya memberikan pendidikan terbaik bagi generasi penerus bangsa.
+                    </p>
+                    <p class="mb-4">
+                        Di era globalisasi ini, kami mempersiapkan siswa-siswi kami tidak hanya dengan pengetahuan akademis yang kuat, tetapi juga
+                        dengan keterampilan abad 21, nilai-nilai moral, dan semangat kepemimpinan yang akan membantu mereka menjadi individu yang
+                        sukses dan berkontribusi positif bagi masyarakat.
+                    </p>
+                    <p class="mb-4">
+                        Melalui program-program unggulan dan fasilitas pembelajaran modern yang kami miliki, kami berharap dapat membantu setiap siswa
+                        mengembangkan potensi terbaiknya dan mencapai cita-citanya.
+                    </p>
+                    <p class="font-semibold text-gray-900 mt-6">
+                        Dr. H. Suryanto, M.Pd.<br />
+                        <span class="text-gray-600 font-normal">Kepala Sekolah</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="font-poppins bg-[#FFFFFF] py-[80px] px-[16px] md:px-[64px] lg:px-[128px]">
+            <div class="flex flex-col md:flex-row items-start gap-8">
+                <!-- Kiri: Teks -->
+                <div class="w-full md:w-1/2">
+                    <h1 class="text-[32px] md:text-[36px] font-bold text-[#1E293B] mb-4">Tentang Kami</h1>
+                    <p class="text-[16px] text-[#64748B] mb-6 leading-relaxed">
+                        Sekolah Maju didirikan pada tahun 1990 dengan visi menjadi lembaga pendidikan terkemuka yang menghasilkan lulusan berkualitas
+                        dan berakhlak mulia.
+                    </p>
+
+                    <h2 class="text-[22px] md:text-[24px] font-bold text-[#1E293B] mb-2">Visi</h2>
+                    <p class="text-[16px] text-[#64748B] mb-6 leading-relaxed">
+                        Menjadi pusat pendidikan unggulan yang menghasilkan pemimpin masa depan dengan karakter yang kuat dan kemampuan akademik yang
+                        excellence.
+                    </p>
+
+                    <h2 class="text-[22px] md:text-[24px] font-bold text-[#1E293B] mb-2">Misi</h2>
+                    <ul class="text-[16px] text-[#64748B] list-disc ml-5 leading-relaxed space-y-2">
+                        <li>Menyelenggarakan pendidikan berkualitas dengan standar internasional</li>
+                        <li>Mengembangkan potensi siswa secara optimal</li>
+                        <li>Membangun karakter dan kepemimpinan siswa</li>
+                        <li>Menciptakan lingkungan belajar yang kondusif dan inovatif</li>
+                    </ul>
+                </div>
+
+                <!-- Kanan: Gambar -->
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <div
+                        class="w-full mt-[100px] max-w-[480px] h-[320px] bg-gray-200 border border-gray-300 rounded-lg shadow-md overflow-hidden flex items-center justify-center"
+                    >
+                        <img src="img/logo-smp206.svg" alt="Placeholder" class="w-full h-full object-cover rounded-lg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#E8F9FF] py-20 px-4 font-poppins">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-[32px] md:text-[36px] font-bold text-[#1E293B] mb-12">Kurikulum</h1>
+
+                <div class="bg-white rounded-xl shadow-md p-6 max-w-sm mx-auto flex flex-col items-center">
+                    <!-- Icon/Image -->
+                    <img src="img/tutwuri.svg" alt="Kurikulum Icon" class="mb-4 w-16 h-16 object-cover rounded-md" />
+                    <!-- Judul -->
+                    <h2 class="text-lg font-bold text-[#1E293B] mb-2">Kurikulum Merdeka</h2>
+                    <!-- Deskripsi -->
+                    <p class="text-sm text-[#64748B] leading-relaxed">
+                        Mengadopsi Kurikulum Merdeka yang berfokus pada pengembangan karakter dan kompetensi siswa.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section -->
+        <section class="bg-[#F1F8FF] py-16 px-4 font-poppins text-center">
+            <h2 class="text-[24px] md:text-[28px] font-bold text-[#1E293B] mb-8">Fasilitas</h2>
+
+            <div class="swiper mySwiper max-w-xl mx-auto">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="img/lab.svg" alt="Lab" class="w-full object-cover" />
+                        <div class="p-4 text-left">
+                            <h3 class="font-semibold text-[#1E293B]">Laboratorium Komputer</h3>
+                            <p class="text-sm text-[#64748B]">Dilengkapi perangkat modern dan internet cepat</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="img/lab.svg" alt="Perpus" class="w-full object-cover" />
+                        <div class="p-4 text-left">
+                            <h3 class="font-semibold text-[#1E293B]">Perpustakaan</h3>
+                            <p class="text-sm text-[#64748B]">Koleksi buku lengkap dan nyaman</p>
+                        </div>
+                    </div>
+                    <!-- Tambah slide lain di sini -->
+                </div>
+
+                <!-- Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <!-- Inisialisasi Swiper -->
+            <script></script>
+        </section>
+
+        <section class="bg-[#1E3A8A] py-16 px-4 font-poppins text-white">
+            <div class="max-w-3xl mx-auto bg-white rounded-xl p-6 text-left text-[#1E293B]">
+                <h2 class="text-xl font-bold mb-4">PPDB 2024/2025</h2>
+
+                <!-- Tab menu dummy -->
+                <div class="flex space-x-4 border-b mb-4 text-sm font-semibold">
+                    <button class="pb-2 border-b-2 border-[#1E3A8A] text-[#1E3A8A]">Persyaratan</button>
+                    <button class="pb-2 text-[#64748B]">Jadwal</button>
+                    <button class="pb-2 text-[#64748B]">Alur Pendaftaran</button>
+                </div>
+
+                <!-- Konten Tab -->
+                <div class="text-sm mb-6 text-[#1E293B] leading-relaxed">
+                    <p>Persyaratan Pendaftaran:</p>
+                    <ul class="list-disc ml-5 mt-2 space-y-1">
+                        <li>Fotokopi Akta Kelahiran</li>
+                        <li>Fotokopi Kartu Keluarga</li>
+                        <li>Fotokopi Rapot 2 Semester Terakhir</li>
+                        <li>Pas Foto 3x4 (2 lembar)</li>
+                        <li>Surat Keterangan Sehat</li>
+                    </ul>
+                </div>
+
+                <button class="bg-[#1E3A8A] text-white px-4 py-2 rounded hover:bg-[#3b4cad]">Daftar Sekarang</button>
+            </div>
+        </section>
+
+        <section class="bg-[#F1F8FF] py-16 px-4 font-poppins">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Form -->
+                <div>
+                    <h2 class="text-[24px] font-bold text-[#1E293B] mb-4">Hubungi Kami</h2>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Nama Lengkap" class="w-full border border-gray-300 rounded p-3" />
+                        <input type="email" placeholder="Email" class="w-full border border-gray-300 rounded p-3" />
+                        <textarea placeholder="Pesan" class="w-full border border-gray-300 rounded p-3 h-32"></textarea>
+                        <button type="submit" class="bg-[#1E3A8A] text-white px-6 py-2 rounded hover:bg-[#3b4cad]">Kirim</button>
+                    </form>
+                </div>
+
+                <!-- Info Kontak -->
+                <div>
+                    <h2 class="text-[20px] font-semibold text-[#1E293B] mb-4">Informasi Kontak</h2>
+                    <ul class="text-[#64748B] space-y-3 text-sm">
+                        <li>📍 Jl. Pendidikan No. 123, Jakarta</li>
+                        <li>✉️ info@sekolahmaju.sch.id</li>
+                        <li>📞 (021) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <script src="main.js"></script>
+    </body>
+</html>
